@@ -7,11 +7,11 @@
          {{ form.as_p }}
          <button type="submit">ADD</button>
        </form>
-         <input type="text" placeholder="Добавить желание"><br>
+
    {% endif %}
 
    {% for product in wishlist.product.all %}
-         <a href="{{ product.link }}"> {{ product.title }}</a><br>
+         <a href="{{ product.link }}">{{ product.title }}</a><br>
    {% endfor %}
 
 {% endblock %}
